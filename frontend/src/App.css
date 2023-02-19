@@ -1,0 +1,71 @@
+/* app.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 3px #d0d0d0;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #d0d0d0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+
+/* .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.enlarged {
+  max-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  border: 1px solid black;
+}
+
+.enlarged + button {
+  display: block;
+  margin: 20px auto;
+}
