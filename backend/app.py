@@ -3,7 +3,7 @@ from flask_cors import CORS, cross_origin
 from predictor import main
 import os
 import base64
-
+ 
 app = Flask(__name__)
 cors = CORS(app)
 
