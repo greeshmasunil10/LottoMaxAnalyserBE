@@ -12,12 +12,12 @@ function App() {
     event.preventDefault();
 
     setIsLoading(true);
-    const response = await fetch(`http://localhost:5000/analyser?start_year=${startYear}&end_year=${endYear}`, {
+    const response = await fetch(`https://lottomax-analyser.herokuapp.com/analyser?start_year=${startYear}&end_year=${endYear}`, {
       headers: {
         'Content-Type': 'application/json'
       }
     });
-
+    console.log(`https://lottomax-analyser.herokuapp.com/analyser?start_year=${startYear}&end_year=${endYear}`)
     const data = await response.json();
     console.log("got data!!")
     console.log(data)
@@ -32,7 +32,7 @@ function App() {
     event.preventDefault();
 
     // Call the download API
-    const response = await fetch('http://localhost:5000/download');
+    const response = await fetch(`https://lottomax-analyser.herokuapp.com/download`);
     const blob = await response.blob();
     const url = window.URL.createObjectURL(new Blob([blob]));
 
