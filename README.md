@@ -1,6 +1,6 @@
 # Lotto Max Analyzer
 
-Click [here](https://lottomax-analyser-fe.herokuapp.com/) to view the live app.
+## Click [here](https://lottomax-analyser-fe.herokuapp.com/) to view the live app.
 
 This project is a simple tool for analyzing the results of the Canadian Lotto Max lottery. The project consists of two main components:
 
