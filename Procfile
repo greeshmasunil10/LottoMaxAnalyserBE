@@ -1,2 +1,1 @@
-web: npm start
-backend: python backend/app.py
+backend: gunicorn app:app
